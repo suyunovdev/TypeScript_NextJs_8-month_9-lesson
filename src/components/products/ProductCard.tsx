@@ -6,11 +6,11 @@ type ProductCardProps = {
 
 const ProductCard = ({ product }: ProductCardProps) => {
   return (
-    <div className="p-5 w-[300px] h-[]400px shadow-md rounded-lg">
+    <div className="p-5 w-[300px] h-[]400px shadow-md rounded-lg cursor-pointer ">
       <img
         src={product.image}
         alt={product.title}
-        className="w-full h-[300px] object-contain"
+        className="w-full h-[200px] object-contain"
       />
       <h1 className="truncate">{product.title}</h1>
       <p className="mt-5">Price: {product.price}</p>
